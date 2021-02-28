@@ -1,0 +1,37 @@
+.sidebar-container {
+  width: 100%;
+  height: max(100%, 100vh);
+  background-color: #f9f9f9;
+  top: 0;
+  left: 0;
+}
+
+.date-picker,
+#add-date-area {
+  margin: 5px;
+}
+
+h1 {
+  margin: 0;
+  padding: 3vh 0;
+}
+
+.dates-control h1 {
+  padding-top: 0;
+}
+hr {
+  margin: 4vh;
+  background-color: #313131;
+  height: 1px;
+}
+
+.keys-list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 0 5%;
+}
+
+.keys-list div {
+  margin: 2px 0;
+}
