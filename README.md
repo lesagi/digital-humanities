@@ -1,5 +1,4 @@
-# Law's Topics' distribution (, feat. Ministry of Justice)
-
+# Law's Topics' distribution
 ## Agenda
 This project was built as part of Digital Humanities course at the BGU University with the assistance of the Ministry of Justice, to help investigate and identify topics distribution in laws over different periods in time.
 
@@ -45,8 +44,15 @@ This project was built as part of Digital Humanities course at the BGU Universit
 ```
 
 ## Installation
-1. Install python requirements: ```pip install -r requirements.txt```
-2. Install the Web-App dependencies: navigate to ```Step_3-Visualize_Data``` directory, and run ```pip install -r requirements.txt```, then run ```yarn install```.
+1. Install python requirements: 
+```sh
+pip install -r requirements.txt
+```
+2. Install the Web-App dependencies: navigate to ```Step_3-Visualize_Data``` directory, and run 
+```sh
+pip install -r requirements.txt
+yarn install
+```
 
 ## Running the project
 The project was assembled of 3 main steps:
@@ -57,4 +63,10 @@ The project was assembled of 3 main steps:
 ### How-To Guide
 1. **Pre-Processing:** This is already made for you. The pre-processed dataset is called ```laws_corpus_lemmatized.json```
 2. **Topic Modeling:** The ```Topic Modeling(LDA).ipynb notebook``` contains a very detailed instruction on how to perform the topic modeling, run the notebook and go through each step thoroughly.
-3. **Visuazlie Data:** For visualizing the data, run the following commands ```yarn start-api```, and then ```yarn start``` each in its own terminal.
+3. **Visuazlie Data:** For visualizing the data, run the following commands, each in its own terminal and by this order:
+```sh
+yarn start-api
+```
+```sh
+yarn start
+```
