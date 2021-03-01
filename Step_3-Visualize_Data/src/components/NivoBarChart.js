@@ -54,12 +54,30 @@ const axisBottom = {
   legendOffset: 32,
 };
 
+const textWrap = (text) => {
+  let nextSpaceIndex = text.indexOf(" ");
+  if (nextSpaceIndex === -1) {
+    return text;
+  }
+  const words = text.split(/\s/gim);
+  return words.reduce((acc, curr, ind) => {
+    let newLine = `${acc} ${curr}`;
+    if (12 < newLine.length) {
+      if (ind !== words.length) {
+        newLine += "\n";
+        console.log(newLine);
+      }
+    }
+    return newLine;
+  });
+};
 const axisLeft = {
   tickSize: 10,
   tickPadding: 5,
   tickRotation: 0,
   legendPosition: "middle",
   legendOffset: -40,
+  format: textWrap,
 };
 
 const legends = [
@@ -95,7 +113,7 @@ const NivoBarChart = ({ data, keys /* see data tab */ }) => {
       indexBy="topic"
       enableGridX={true}
       enableGridY={false}
-      margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
+      margin={{ top: 50, right: 180, bottom: 50, left: 195 }}
       padding={0.3}
       groupMode="grouped"
       layout="horizontal"
