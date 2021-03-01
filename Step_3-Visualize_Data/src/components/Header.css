@@ -1,0 +1,15 @@
+header {
+  display: flex;
+  align-items: center;
+  background-color: #e0d8e7;
+  justify-content: space-between;
+}
+#img-container {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+#img-container img {
+  width: auto;
+  max-height: 70px;
+}

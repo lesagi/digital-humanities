@@ -75,7 +75,7 @@ const Sidebar = ({
           </Button>
         </div>
         <hr />
-        <div class="dates-control">
+        <div className="dates-control">
           <h1>Dates</h1>
           <div className="keys-list">
             {keys.map((key, ind) => {
@@ -101,6 +101,11 @@ const Sidebar = ({
           </div>
         </div>
       </FormControl>
+      <h4 id="credits">
+        Project was made by Sagi Levi |{" "}
+        <a href="mailto:lesagi@gmail.com">lesagi@gmail.com</a> |{" "}
+        <a href="https://github.com/lesagi">https://github.com/lesagi</a>
+      </h4>
     </div>
   );
 };

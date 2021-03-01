@@ -4,6 +4,15 @@
   background-color: #f9f9f9;
   top: 0;
   left: 0;
+  position: relative;
+}
+
+#credits {
+  position: absolute;
+  bottom: 10px;
+  font-weight: normal;
+  font-size: 0.6rem;
+  width: 100%;
 }
 
 .date-picker,

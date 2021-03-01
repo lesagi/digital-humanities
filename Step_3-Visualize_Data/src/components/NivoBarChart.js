@@ -112,7 +112,7 @@ const NivoBarChart = ({ data, keys /* see data tab */ }) => {
       indexBy="topic"
       enableGridX={true}
       enableGridY={false}
-      margin={{ top: 50, right: 180, bottom: 50, left: 195 }}
+      margin={{ top: 20, right: 180, bottom: 50, left: 200 }}
       padding={0.3}
       groupMode="grouped"
       layout="horizontal"

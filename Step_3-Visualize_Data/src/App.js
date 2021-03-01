@@ -3,7 +3,7 @@ import "./App.css";
 import NivoBarChart from "./components/NivoBarChart";
 import Sidebar from "./components/Sidebar";
 import moment from "moment";
-
+import Header from "./components/Header";
 function App() {
   const [data, setData] = useState(null);
   const [keys, setKeys] = useState([]);
@@ -84,6 +84,9 @@ function App() {
   };
   return (
     <div className="app">
+      <div id="header-area">
+        <Header />
+      </div>
       <div id="sidebar-area">
         <Sidebar
           startDate={startDate}
