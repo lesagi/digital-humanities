@@ -50,7 +50,6 @@ pip install -r requirements.txt
 ```
 2. Install the Web-App dependencies: navigate to ```Step_3-Visualize_Data``` directory, and run 
 ```sh
-pip install -r requirements.txt
 yarn install
 ```
 
