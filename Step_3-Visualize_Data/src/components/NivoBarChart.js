@@ -65,7 +65,6 @@ const textWrap = (text) => {
     if (12 < newLine.length) {
       if (ind !== words.length) {
         newLine += "\n";
-        console.log(newLine);
       }
     }
     return newLine;
