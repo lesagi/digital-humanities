@@ -55,14 +55,14 @@ yarn install
 
 ## Running the project
 The project was assembled of 3 main steps:
-1. **Pre-Processing:** Parsing the ```akn``` dataset lemmatizing and tagging (using YAP) each word in each sentence. Then, combining a huge list to be used as corpus for phase 2, the Topic Modeling.
+1. **Pre-Processing:** Parsing the ```akn``` dataset, lemmatizing and tagging (using YAP) each word in each sentence. Then, combining a huge list to be used as corpus for phase 2, the Topic Modeling.
 2. **Topic Modeling:** Cleaning the corpus by pin-pointing the stopwords, trying to a various options for words' grouping, choosing the optimal model and assigning a topic title for each group of words.
 3. **Visuazlie Data:** Running a Web-Application that shows the topics ditribution for each period of time.
 
 ### How-To Guide
 1. **Pre-Processing:** This is already made for you. The pre-processed dataset is called ```laws_corpus_lemmatized.json```
-2. **Topic Modeling:** The ```Topic Modeling(LDA).ipynb notebook``` contains a very detailed instruction on how to perform the topic modeling, run the notebook and go through each step thoroughly.
-3. **Visuazlie Data:** For visualizing the data, run the following commands, each in its own terminal and by this order:
+2. **Topic Modeling:** The ```Topic Modeling(LDA).ipynb notebook``` contains a very detailed instruction on how to perform the topic modeling, run the notebook and go through each step thoroughly (For further explanations you can check the README for part 2).
+3. **Visuazlie Data:** For visualizing the data, navigate to ```Step_3-Visualize_Data``` and run the following commands, each in its own terminal and by this order:
 ```sh
 yarn start-api
 ```
