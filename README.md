@@ -2,6 +2,17 @@
 ## Agenda
 This project was built as part of Digital Humanities course at the BGU University with the assistance of the Ministry of Justice, to help investigate and identify topics distribution in laws over different periods in time.
 
+## Project Overview
+The project was made with unsupervised machine learning algorithm (LDA - Latend Dirichlet Algorithm) which excels in distributing a corpus to topics and determine the amount of contribution each topic has for a specific document in the corpus. 
+This, however, was not the obvious choice since the laws are already been classified in the 'National Legislative Database' (מאגר החקיקה הלאומי) and I could have used the calssification suggested there. 
+But, letting an ML algorithm to classify on its own can potentially suggests insightful results that couldn't have been accepted otherwise.
+(i.e, classification that put all laws about 'religion' along with 'criminal justice' laws, might suggest that are some overlapping with how the government handle these manners, etc).
+
+The project was assembled of 3 main steps:
+1. **Pre-Processing:** Parsing the ```akn``` dataset, lemmatizing and tagging (using YAP) each word in each sentence. Then, combining a huge list to be used as corpus for phase 2, the Topic Modeling.
+2. **Topic Modeling:** Cleaning the corpus by pin-pointing the stopwords, trying various of options for words' grouping, choosing the optimal model and assigning a topic title for each group of words.
+3. **Visuazlie Data:** Running the web application that shows the topics ditribution for a custom periods in time.
+
 ## Project Structure
 ```
 ./
@@ -52,12 +63,6 @@ pip install -r requirements.txt
 ```sh
 yarn install
 ```
-
-## Running the project
-The project was assembled of 3 main steps:
-1. **Pre-Processing:** Parsing the ```akn``` dataset, lemmatizing and tagging (using YAP) each word in each sentence. Then, combining a huge list to be used as corpus for phase 2, the Topic Modeling.
-2. **Topic Modeling:** Cleaning the corpus by pin-pointing the stopwords, trying to a various options for words' grouping, choosing the optimal model and assigning a topic title for each group of words.
-3. **Visuazlie Data:** Running a Web-Application that shows the topics ditribution for each period of time.
 
 ### How-To Guide
 1. **Pre-Processing:** This is already made for you. The pre-processed dataset is called ```laws_corpus_lemmatized.json```
