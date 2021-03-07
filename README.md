@@ -7,6 +7,7 @@ The project was made with unsupervised machine learning algorithm (LDA - Latend 
 This, however, was not the obvious choice since the laws are already been classified in the 'National Legislative Database' (מאגר החקיקה הלאומי) and I could have used the calssification suggested there. 
 But, letting an ML algorithm to classify on its own can potentially suggests insightful results that couldn't have been accepted otherwise.
 (i.e, classification that put all laws about 'religion' along with 'criminal justice' laws, might suggest that are some overlapping with how the government handle these manners, etc).
+I have used a method of 'remote reading' (קריאה מרחוק) and some other NLP algorithms (tagger, lemmatizer) for the purpose of composing the corpus.
 
 The project was assembled of 3 main steps:
 1. **Pre-Processing:** Parsing the ```akn``` dataset, lemmatizing and tagging (using YAP) each word in each sentence. Then, combining a huge list to be used as corpus for phase 2, the Topic Modeling.
